@@ -516,7 +516,7 @@ header {
 /*======= FOOT FORM =======*/
 
 .foot-form-wrap {
-  margin-left: 80px;
+  margin-left: auto;
 }
 
 .foot-form {
@@ -543,7 +543,7 @@ header {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   outline: transparent;
   background-color: transparent;
-  padding: 8px 212px 8px 16px;
+  padding: 8px 16px;
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -568,7 +568,6 @@ header {
   padding: 8px 24px;
   justify-content: center;
   align-items: center;
-  gap: 16px;
   border-radius: 4px;
   background: #4D5AE5;
   color: #FFF;
@@ -581,6 +580,11 @@ header {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+}
+
+.foot-form-btn:hover,
+.foot-form-btn:focus {
+  background-color: #404bbf;
 }
 
 .foot-icon {
@@ -704,6 +708,10 @@ header {
   padding-left: 38px;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
 }
 
 .modal-input:focus,
@@ -759,8 +767,8 @@ fill: #4D5AE5;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-check {
-
+.modal-check:focus +.modal-check-text >.modal-check-box {
+border-color: #4D5AE5;
 }
 
 .modal-check:checked + .modal-check-text > .modal-check-box {
@@ -802,6 +810,10 @@ fill: #4D5AE5;
   line-height: 1.33;
   letter-spacing: 0.04em;
   color: #4D5AE5;
+}
+
+.modal-check-link:hover {
+  text-decoration: underline;
 }
 
 .modal-form-btn {
